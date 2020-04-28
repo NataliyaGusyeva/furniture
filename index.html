@@ -32,7 +32,7 @@
 	</header>
 	<main>
 		<div>
-			<video src=""></video>
+			<video controls width="1200" src="https://www.youtube.com/watch?v=2pNXZ5V44DE"></video>
 			<p>Get Inspired</p>
 			<button>Shop All looks</button>
 		</div>
@@ -58,7 +58,10 @@
 			<p>Customize your choice by design</p>
 		</div>
 		<div>
-			<datalist id="shopbyplace">
+			<label for="shop-by-place"></label>
+			<input list="shopbyplace" id="shop-by-place" name="shop-by-place" />
+			<datalist id="shopbydesign">
+            <datalist id="shopbyplace">
 				<option value="Kitchen"></option>
 				<option value="Living room"></option>
 				<option value="Dining room"></option>
@@ -75,7 +78,10 @@
 			<p>Find everything for your place</p>
 		</div>
 		<div>
-			<datalist id="shopbycategory">
+			<label for="shop-by-category"></label>
+			<input list="shopbycategory" id="shop-by-category" name="shop-by-category" />
+			<datalist id="shopbydesign">
+            <datalist id="shopbycategory">
 				<option value="Chairs"></option>
 				<option value="Sofas"></option>
 				<option value="Office"></option>
@@ -89,7 +95,10 @@
 			<p>Find everything for your place</p>
 		</div>
 		<div>
-			<datalist id="shopbestsellers">
+			<label for="shop-best-sellers"></label>
+			<input list="shopbestsellers" id="shop-best-sellers" name="shop-best-sellers" />
+			<datalist id="shopbydesign">
+            <datalist id="shopbestsellers">
 				<option value="Shop all best sellers"></option>
 				<option value="Lightning"></option>
 				<option value="Furniture"></option>
