@@ -4,3 +4,14 @@ header {
 footer {
     background-color: #333333
 }
+footer {
+    font: white
+}
+#offersline {
+    color: #333333
+}
+<style>
+  .wthite-text {
+    color: white;
+  }
+</style>
