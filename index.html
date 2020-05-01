@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-	.white-text {
-		color: white;
-	}
-</style>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Furniture shop</title>
 	<link rel="shortcart icon" href="img/apt-logo.png">
 	<link rel="stylesheet" href="css/index.css">
+	<link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
 </head>
+
 <body>
 	<header>
-		<p id="offersline">FREE shipping over $49</p>
-        <img src="img/apt-logo.png" alt="Apt 2B logo of furniture site">
-		<input type="search" placeholder="Search">
+		<p class="offers-line" id="offersline">FREE shipping over $49</p>
 		<nav class="customerbar">
-			<a href="#">My account</a>
-			<a href="#">Wish List</a>
-			<a href="#">Cart</a>
+			<img id="main-apt-logo" src="img/apt-logo.png" alt="Apt 2B logo of furniture site">
+			<input id="search" placeholder="| Search">
+			<nav section="profile-nav">
+				<img id="icon-notlogged-profile" src="img/icon-profile.png" alt="black profile circle icon depicting a person">
+				<a href="#">My account</a>
+				<img id="icon-heart-saveditems" src="img/baseline_favorite_border_black_24dp.png" alt="a black bordered heart icon depicting customer saved items">
+				<a href="#">Wish List</a>
+				<img id="icon-empty-cart" src="img/icon-cart.png" alt="black shopping cart icon">
+				<a href="#">Cart</a>
+			</nav>
 		</nav>
-		<br>
 		<nav class="mainmenu">
 			<a href="#">New arrivals</a>
 			<a href="#">Furniture</a>
 			<a href="#">Lightning</a>
 			<a href="#">Decor</a>
 			<a href="#">Offers & Sale</a>
-			<a href="">About Us</a>
-			<a href="">Shipping</a>
+			<a href="#">About Us</a>
+			<a href="#">Shipping</a>
 		</nav>
 	</header>
 	<main>
