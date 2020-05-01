@@ -1,32 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rozha+One&display=swap');
 :root {
     font-family: 'Roboto';
-    --main-color: black;
-    margin-left: 74px;
-    margin-right: 74px;
-    width: 1440px;
-    height: 1998px;
-    overflow-y: scroll;
+    color: black;
     background: #FFFFFF
 }
 
 header .offers-line {
     background-color: #333333;
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
+    text-align: right;
     color: white;
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 8px;
     margin-bottom: 10px;
     width: 1440px;
-    margin-left: 0px;
+}
+
+#offersline {
+    margin-right: 74px;
 }
 
 #search {
 border-color: transparent;
-width: 800px;
+width: 750px;
 height: 20px;
 letter-spacing: 0.1em;
 align-items:  center;
@@ -44,6 +40,7 @@ align-items:  center;
     top: 52px;
     margin-top: 10px;
     align-items:  center;
+    margin-left: 74px;
 }
 
 header .customerbar {
@@ -59,12 +56,14 @@ header .customerbar {
 header .customerbar a {
     text-decoration: none;
     color: black;
+    padding-bottom: 10px
 }
 
 #icon-notlogged-profile {
     width: 24px;
     height: 24px; 
 }
+
 #icon-heart-saveditems {
     width: 26px;
     height: 26px;  
@@ -73,6 +72,22 @@ header .customerbar a {
 #icon-empty-cart {
    width: 24px;
    height: 24px;  
+}
+
+#my-account {
+    margin-left: 8px;
+    margin-right: 21px;
+}
+
+#wish-list {
+   margin-left: 6px;
+   margin-right: 21px; 
+}
+
+#shopping-cart {
+    margin-left: 9px;
+    margin-right: 74px;
+
 }
 
 header .mainmenu {
@@ -88,10 +103,25 @@ header .mainmenu {
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.1em;
+    
 }
+
+header nav .mainmenu {
+margin-right: 74px;
+margin-left:  74px;
+}
+
 header .mainmenu a {
     text-decoration: none;
     color: black;
+}
+
+#new-arrivals {
+   
+}
+
+#mmenu-shipping {
+    margin-right: 0px;
 }
 
 footer {
