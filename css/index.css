@@ -5,6 +5,27 @@
     background: #FFFFFF
 }
 
+@media (min-width: 600px) {
+}
+
+
+.mainmenu
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+body (max.width: 980px) {
+
+}
 
 header .offers-line {
     background-color: #333333;
@@ -17,8 +38,9 @@ header .offers-line {
     width: 1440px;
 }
 
-#offersline {
+#offerslink{
     margin-right: 74px;
+    color: white;
 }
 
 #search {
@@ -60,43 +82,12 @@ header .customerbar a {
     padding-bottom: 10px
 }
 
-#icon-notlogged-profile {
-    width: 24px;
-    height: 24px; 
-}
-
-#icon-heart-saveditems {
-    width: 26px;
-    height: 26px;  
-}
-
-#icon-empty-cart {
-   width: 24px;
-   height: 24px;  
-}
-
-#my-account {
-    margin-left: 8px;
-    margin-right: 21px;
-}
-
-#wish-list {
-   margin-left: 6px;
-   margin-right: 21px; 
-}
-
-#shopping-cart {
-    margin-left: 9px;
-    margin-right: 74px;
-
-}
-
 header .mainmenu {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     margin-top: 1rem;
     background-color: #F9F9F9;
-    align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
     width: 1440px;
@@ -104,8 +95,8 @@ header .mainmenu {
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.1em;
-    
 }
+
 
 header nav .mainmenu {
 margin-right: 74px;
@@ -117,12 +108,35 @@ header .mainmenu a {
     color: black;
 }
 
-#new-arrivals {
-   
+#custom_dropdown_selectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
 }
 
 #mmenu-shipping {
     margin-right: 0px;
+}
+
+main .customizedselectmenu {
+ display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    background-color: #F9F9F9;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+
+main .custom-components {
+    display: flex;
+    justify-content: space-around
 }
 
 @media (min-width: 500px) {
@@ -141,3 +155,5 @@ footer {
 footer .white-text {
 		color: white;
 	}
+
+    

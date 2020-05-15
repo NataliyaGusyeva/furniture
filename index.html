@@ -9,32 +9,92 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="js/index.js">
 	<link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
-	<script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 	<header>
-		<p class="offers-line" id="offersline">FREE shipping over $49</p>
-		<button type="button" class="btn btn-link">FREE shipping over $49</button>
+		<p class="offers-line" id="offersline">
+			<a id="offerslink" href="#">FREE shipping over $49</a>
+		</p>
 		<nav class="customerbar">
 			<img id="main-apt-logo" src="img/apt-logo.png" alt="Apt 2B logo of furniture site">
 			<input id="search" placeholder="| Search">
-			<nav section="profile-nav">
-				<img id="icon-notlogged-profile" src="img/icon-profile.png" alt="black profile circle icon depicting a person">
-				<a id="my-account" href="#">My account</a>
-				<img id="icon-heart-saveditems" src="img/baseline_favorite_border_black_24dp.png" alt="a black bordered heart icon depicting customer saved items">
-				<a id="wish-list" href="#">Wish List</a>
-				<img id="icon-empty-cart" src="img/icon-cart.png" alt="black shopping cart icon">
-				<a id="shopping-cart" href="#">Cart</a>
-			</nav>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" href="#" data-toggle="modal" data-target="#first_modal">
+						<span class="material-icons">account_circle</span>
+						My account
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span class="material-icons">favorite_border</span>
+						Wish List
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span class="material-icons">shopping_cart</span>
+						Cart
+					</a>
+				</li>
+			</ul>
+			<!-- Modal Account -->
+			<div id="first_modal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="container">
+							<button class="close-button">
+                                    <span id="close-icon" class="material-icons">close</span>
+                                </button>
+							<form id="form" class="form">
+								<h2>New Member</h2>
+								<div class="form-control">
+									<label for="username"></label>
+									<input type="text" id="username" placeholder="first and last name"/>
+									<small>Error message</small>
+								</div>
+								<div class="form-control">
+									<label for="email"></label>
+									<input type="text" id="email" placeholder="email address"/>
+									<small>Error message</small>
+								</div>
+								<div class="form-control">
+									<input type="password" id="password" placeholder="password"/>
+									<button class="show">
+                                            <span class="material-icons">visibility</span>
+                                        </button>
+									<small>Error message</small>
+								</div>
+								<div class="form-control">
+									<label for="password2"></label>
+									<input type="password" id="password2" placeholder="password again"/>
+									<span class="material-icons">visibility</span>
+									<small>Error message</small>
+								</div>
+								<div class="customer-agreement"><fieldset>
+									<input type="checkbox" id="chekbox-user-agree-to-terms"/>
+									<label for="checkbox-user-agree-to-terms">Creating an account means you’re okay with our Terms of Service, Privacy Policy, and our default Notification Settings.</label>
+									</fieldset>
+								</div><button type="submit">Create account</button>
+							</form>
+						</div>
+					</div>
+				</div>
 		</nav>
 		<nav class="mainmenu">
 			<a id="new-arrivals" href="#">New arrivals</a>
 			<a href="#">Furniture</a>
 			<a href="#">Lightning</a>
 			<a href="#">Decor</a>
-			<a href="#">Offers & Sale</a>
+			<a href="#">Offers &Sale</a>
 			<a href="#">About Us</a>
 			<a id="mmenu-shipping" href="#">Shipping</a>
 		</nav>
@@ -45,32 +105,34 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img src="img/homepage-img.png" class="d-block w-100" alt="A small girl is walking on the white kitchen">
-    </div>
+                </div>
 						<div class="carousel-item">
 							<img src="img/homepage-img-two.jpg" class="d-block w-100" alt="A large mostly white kithen with one blue bar side and a white kitchen island made in modern design and filled with kitchen staff ">
-    </div>
-							</div>
-							<a class="carousel-control-prev" href="#carouselExampleFade" role="button"
-								data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleFade" role="button"
-								data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
+                </div>
 						</div>
+						<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<div class="overslider-action-button">
 						<p>Get Inspired</p>
 						<button>Shop All looks</button>
-						<nav class="customizedselectmenu">
-							<a href="#">Shop by design</a>
-							<a href="#">Shop by place</a>
-							<a href="#">Shop by category</a>
-							<a href="#">Shop Best sellers</a>
-						</nav>
+					</div>
+					<nav class="customizedselectmenu">
+						<a href="#">Shop by design</a>
+						<a href="#">Shop by place</a>
+						<a href="#">Shop by category</a>
+						<a href="#">Shop Best sellers</a>
+					</nav>
+					<div id="custom_dropdown_selectors" class="custom-dropdown-selectors">
+
 						<label for="shop-by-design"></label>
-						<input list="shopbydesign" id="shop-by-design" name="shop-by-design" />
+						<input list="shopbydesign" id="shop-by-design" name="shop-by-design"/>
 						<datalist id="shopbydesign">
 							<option value="Industrial"></option>
 							<option value="Contemporary"></option>
@@ -78,12 +140,9 @@
 							<option value="Modern"></option>
 							<option value="Rustic"></option>
 						</datalist>
-						<img src="img/industrial-design.jpg" alt="server with shelves made in industrial design">
-						<p>Customize your choice by design</p>
-					</div>
-					<div>
+
 						<label for="shop-by-place"></label>
-						<input list="shopbyplace" id="shop-by-place" name="shop-by-place" />
+						<input list="shopbyplace" id="shop-by-place" name="shop-by-place"/>
 						<datalist id="shopbyplace">
 							<option value="Kitchen"></option>
 							<option value="Living room"></option>
@@ -97,56 +156,96 @@
 							<option value="Balcony"></option>
 							<option value="Cottage"></option>
 						</datalist>
-						<br>
-						<img src="img/small-kitchen.png" alt="Two kids are staying on the beautiful white kitchen and cooking something">
-						<p>Find everything for your place</p>
-					</div>
-					<div>
-						<label for="shop-by-category"></label>
-						<input list="shopbycategory" id="shop-by-category" name="shop-by-category" />
-						<datalist id="shopbycategory">
-							<option value="Chairs"></option>
-							<option value="Sofas"></option>
-							<option value="Office"></option>
-							<option value="Beds"></option>
-							<option value="Storage"></option>
-							<option value="Kids"></option>
-							<option value="Tables"></option>
-							<option value="Ottomans & Puffs"></option>
+
+						<label for="shop-by-category "></label>
+						<input list="shopbycategory " id="shop-by-category " name="shop-by-category " />
+						<datalist id="shopbycategory ">
+							<option value="Chairs "></option>
+							<option value="Sofas "></option>
+							<option value="Office "></option>
+							<option value="Beds "></option>
+							<option value="Storage "></option>
+							<option value="Kids "></option>
+							<option value="Tables "></option>
+							<option value="Ottomans&Puffs "></option>
 						</datalist>
-						<br>
-						<img src="img/glamchair.jpg" alt="A peach chair in the room">
-						<p>Find everything for your place</p>
-					</div>
-					<div>
-						<label for="shop-best-sellers"></label>
-						<input list="shopbestsellers" id="shop-best-sellers" name="shop-best-sellers" />
-						<datalist id="shopbestsellers">
-							<option value="Shop all best sellers"></option>
-							<option value="Lightning"></option>
-							<option value="Furniture"></option>
-							<option value="Decor"></option>
-							<option value="Storage"></option>
-							<option value="Kids"></option>
+
+						<label for="shop-best-sellers "></label>
+						<input list="shopbestsellers " id="shop-best-sellers " name="shop-best-sellers " />
+						<datalist id="shopbestsellers ">
+							<option value="Shop all best sellers "></option>
+							<option value="Lightning "></option>
+							<option value="Furniture "></option>
+							<option value="Decor "></option>
+							<option value="Storage "></option>
+							<option value="Kids "></option>
 						</datalist>
-						<br>
-						<img src="img/bestsellers-lamps.png" alt="Two table lamps standing over the bluegreen sofa">
-		</div>
-						<div>
-							<p>Lagoon Collection</p>
-							<img src="img/blue-sofa.png" alt="Blue sofa in modern design">
-							<img src="img/blue-chair.png" alt="Blue chair in modern design">
-							<button>Buy</button>
-							<p>Shop by collection</p>
-							<br>
-							<p>More than 100 items on Sale!</p>
-							<button>Shop Sale</button>
+					</div>
+					<div class="custom-components">
+						<div class="custom-design-cards">
+							<div class="card">
+								<img src="img/design-industrial.jpg" alt="A room made in an industrial design with wood furniture">
+								<div class="arrow-container">
+									<div class="arrow">>
+									</div>
+								</div>
+								<div class="text-container">
+									<p>Customize your choice by design</p>
+								</div>
+							</div>
 						</div>
-						<p>Be the first to know about our sales!</p>
-						<input type="email" placeholder="email address">
-						<button>Sumbit</button>
+
+						<div class="card"><img src="img/design-kitchen.png"alt="Two kids are staying on the beautiful white kitchen and cooking something"">
+        <div class="arrow-container ">
+          <div class="arrow ">
+            >
+          </div>  
+        </div>  
+        <div class="text-container ">
+            <p>Find everything for your place</p>
+        </div>  
+    </div>  
+
+<div class="card"><img src="img/chairs-design.jpg"alt="A room with a peach accent chair surrounded with home plants">
+        <div class="arrow-container ">
+          <div class="arrow ">
+            >
+          </div>  
+        </div>  
+        <div class="text-container ">
+            <p>Find everything for your place</p>
+        </div>  
+    </div>  
+
+<div class="card"><img src="img/bs-lamps.png"alt="A short fragment of a room with beautiful table lamps behind a sofa">
+        <div class="arrow-container ">
+          <div class="arrow ">
+            >
+          </div>  
+        </div>  
+        <div class="text-container ">
+            <p>Find everything for your place</p>
+        </div>  
+    </div>  
+
+    </div>
+			<div class="collection-offers ">
+						<p>Lagoon Collection</p>
+						<img src="img/blue-sofa.png " alt="Blue sofa in modern design ">
+						<img src="img/blue-chair.png " alt="Blue chair in modern design ">
+						<button>Buy</button>
+						<p>Shop by collection</p>
+						<br>
+						<p>More than 100 items on Sale!</p>
+						<button>Shop Sale</button>
+			</div>
+      <div class="offes-section ">
+					<p>Be the first to know about our sales!</p>
+					<input type="email " placeholder="email address ">
+					<button>Sumbit</button>
+      </div>
 	</main>
-	<footer class="white-text">
+	<footer class="white-text ">
 		<p><span>About Us</span></p>
 		<p><span>Customer Service</span></p>
 		<p><span>Contact Us</span></p>
@@ -173,23 +272,29 @@
 			Sun: 9AM - 6PM
 			All times Eastern</p>
 		<hr>
-		<nav class="user information">
+		<nav class="user information ">
 			<a href="#">Terms of Use</a>
-			<a href="#">Privacy Policy</a>
-			<a href="">Shop International</a>
-			<a href="">Site Map</a>
-			<a href="">Questions & Answers</a>
-		</nav>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
+							<a href="#">Privacy Policy</a>
+							<a href="">Shop International</a>
+							<a href="">Site Map</a>
+							<a href="">Questions & Answers</a>
+							</nav>
+							</footer>
+							<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+								integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+								crossorigin="anonymous ">
+							</script>
+							<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+								integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+								crossorigin="anonymous ">
+							</script>
+							<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+								integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+								crossorigin="anonymous ">
+							</script>
+							<script
+								src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js ">
+							</script>
 </body>
 
 </html>
