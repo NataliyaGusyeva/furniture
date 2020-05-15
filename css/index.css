@@ -124,6 +124,14 @@ header .mainmenu a {
     margin-right: 0px;
 }
 
+@media (min-width: 500px) {
+    nav .mainmenu a {
+        display: flex;
+        flex-direction: block;
+    }
+}
+
+
 footer {
     background-color: #333333
 
