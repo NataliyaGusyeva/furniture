@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rozha+One&display=swap');
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rozha+One&display=swap'); :root {
     font-family: 'Roboto';
     color: black;
     background: #FFFFFF
 }
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+/*--------------------------------- Responsive -------------------------------- */
+
 @media (min-width: 600px) {
 }
 
+/*--------------------------------- General ----------------------------------- */
 
-.mainmenu
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+body {
+width: 100%;
+margin: auto;
 }
 
-body (max.width: 980px) {
-
-}
+/* --------------------------------- Offers Line ------------------------------ */
 
 header .offers-line {
     background-color: #333333;
@@ -38,39 +38,40 @@ header .offers-line {
     width: 1440px;
 }
 
-#offerslink{
-    margin-right: 74px;
+#offerslink {
+    margin-right: 83px;
     color: white;
 }
 
+/* ------- Above main menu section (logo, search, customer account nav) ------- */
+
+#main-apt-logo {
+    width: 78px;
+    height: 63px;
+    top: 52px;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 48px;
+}
+
 #search {
-border-color: transparent;
-width: 750px;
-height: 20px;
-letter-spacing: 0.1em;
-align-items:  center;
+    border-color: transparent;
+    width: 750px;
+    height: 20px;
+    letter-spacing: 0.1em;
+    align-items: center;
 }
 
 ::placeholder {
     color: black;
     font-size: 18px;
 }
-    
-#main-apt-logo {
-    width: 78px;
-    height: 63px;
-    left: 74px;
-    top: 52px;
-    margin-top: 10px;
-    align-items:  center;
-    margin-left: 74px;
-}
 
 header .customerbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:  center;
+    align-items: center;
     font-size: 18px;
     list-style-type: none;
     text-decoration: none;
@@ -79,8 +80,18 @@ header .customerbar {
 header .customerbar a {
     text-decoration: none;
     color: black;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
+
+nav .justify-content-end {
+  margin-right: 40px;
+  align-items: center;
+}
+/* ----------------------------------- MODALS --------------------------------- */
+
+
+
+/* ------------------------------ Main menu section --------------------------- */
 
 header .mainmenu {
     display: flex;
@@ -92,15 +103,16 @@ header .mainmenu {
     padding-bottom: 16px;
     width: 1440px;
     font-weight: normal;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.1em;
 }
 
-
 header nav .mainmenu {
-margin-right: 74px;
-margin-left:  74px;
+    margin-right: 74px;
+    margin-left: 74px;
 }
 
 header .mainmenu a {
@@ -108,52 +120,220 @@ header .mainmenu a {
     color: black;
 }
 
+#mmenu-shipping {
+    margin-right: 0px;
+}
+
+/* ------------------- Carusel section (slider & action button) ------------- */
+.container-fluid {
+  position: relative;
+  width: 92%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-fluid img {
+  width: 100%;
+  height: auto;
+  max-width: 1292px;
+}
+
+#action-phrase {
+font-family: Rozha One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 30px;
+/* or 83% */
+letter-spacing: 0.1em;
+color: rgba(0, 0, 0, 0.8);
+background: rgba(255, 255, 255, 0.2);
+width: 318px;
+height: 163px;
+left: 1028px;
+text-align: center;
+margin-top: 34px;
+}
+
+
+#carusel-action-button {
+  width: 224px;
+  height: 46px;
+  left: 1075px;
+  top: 607px;
+  background: #FF5E95;
+  font-family: Roboto;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 10%;
+  color: white;
+  border: transparent;
+  position: a;
+}
+
+
+/* ---------------------------- Customized menu section ---------------------- */
+
+main .customizedselectmenu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+  background: #F9F9F9;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  width: 1440px;
+}
+
+main .customizedselectmenu a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+}
+
+/* ------------------------- Dropdown selectors section ---------------------- */
+
 #custom_dropdown_selectors {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
 }
-
-#mmenu-shipping {
-    margin-right: 0px;
+#shop-by-place {
+  border: transparent;
+  width: 194px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-main .customizedselectmenu {
- display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-    background-color: #F9F9F9;
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 100%;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 0.1em;
+::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
 }
+
+#shop-by-design {
+  border: transparent;
+  width: 194px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#shop-by-category {
+  border: transparent;
+  width: 194px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#shop-best-sellers {
+  border: transparent;
+  width: 194px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+/* ------------------------ Custom Shop by CARDS section ---------------------- */
 
 main .custom-components {
     display: flex;
     justify-content: space-around
 }
 
-@media (min-width: 500px) {
-    nav .mainmenu a {
-        display: flex;
-        flex-direction: block;
-    }
+.card {
+  display: grid;
+  grid-template-columns: 5fr 1fr 3fr;
+  border: transparent;
 }
 
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card .arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196, 196, 196, 0.1);
+  
+}
+
+.card .text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rozha One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
+  color: #000000;
+  padding-right: 13px;
+  background: rgba(196, 196, 196, 0.1);
+  margin-right: 16px;
+}
+
+.card .arrow {
+  cursor: pointer;
+}
+
+.card .arrow:hover {
+  font-weight: bold;
+}
+
+/* ------------------------ Offers & Sale section ---------------------- */
+
+
+
+
+
+/* ------------------------ Footer section ---------------------- */
 
 footer {
     background-color: #333333
-
 }
 
 footer .white-text {
-		color: white;
-	}
-
-    
+    color: white;
+}
