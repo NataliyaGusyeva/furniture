@@ -324,6 +324,45 @@ main .custom-components {
 
 /* ------------------------ Offers & Sale section ---------------------- */
 
+.offes-section {
+  display: flex;
+  margin-top: 65px;
+  margin-bottom: 35px;
+  justify-content: center;
+}
+
+#user-email {
+width: 314px;
+height: 40px;
+left: 690px;
+top: 1499px;
+margin-left: 21px;
+}
+
+::placeholder {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.1em;
+color: rgba(0, 0, 0, 0.3);
+}
+
+#submit-email-button {
+width: 144px;
+height: 40px;
+left: 1002px;
+top: 1499px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+text-align: center;
+color: #FFFFFF;
+background: rgba(0, 0, 0, 0.8);
+}
+
 
 
 
