@@ -7,9 +7,7 @@ document.querySelector('.arrow')
 
 
 const imgArray = [
-  'https://via.placeholder.com/150x300/aaa/fff',
-  'https://via.placeholder.com/150x300/f09/fff',
-  'https://via.placeholder.com/150x300/bbb/ccc'
+  'img/industrial-design-two.jpg',
 ];
 let imgIdx = 0;
 
